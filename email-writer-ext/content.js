@@ -32,6 +32,30 @@ function findComposeToolbar() {
     return null;
 }
 
+function createAIDropdown() {
+    const dropdown = document.createElement('select');
+    dropdown.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3'; // Applying same class as button
+    dropdown.style.marginRight = '8px';
+    dropdown.style.padding = '0 10px';
+    dropdown.style.height = '36px';
+    dropdown.style.borderRadius = '4px';
+    dropdown.style.border = '1px solid #d3d3d3';
+    dropdown.style.backgroundColor = '#f1f3f4';
+    dropdown.style.color = '#3c4043';
+    dropdown.style.fontSize = '14px';
+    dropdown.style.cursor = 'pointer';
+
+    const tones = ['Professional', 'Casual', 'Friendly', 'Formal'];
+    tones.forEach(tone => {
+        const option = document.createElement('option');
+        option.value = tone.toLowerCase();
+        option.textContent = tone;
+        dropdown.appendChild(option);
+    });
+
+    return dropdown;
+}
+
 function createAIButton() {
     const button = document.createElement('div');
     button.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3';
@@ -52,7 +76,11 @@ function injectButton() {
         console.log("Toolbar not found");
         return;
     }
-    console.log("Toolbar found, creating AI button");
+    console.log("Toolbar found, creating AI button and dropdown");
+
+    const dropdown = createAIDropdown();
+    toolbar.insertBefore(dropdown, toolbar.firstChild);
+
     const button = createAIButton();
     button.classList.add('ai-reply-button');
 
@@ -62,6 +90,8 @@ function injectButton() {
             button.disabled = true;
 
             const emailContent = getEmailContent();
+            const selectedTone = dropdown.value;
+
             const response = await fetch('http://localhost:8080/api/email/generate', {
                 method: 'POST',
                 headers: {
@@ -69,7 +99,7 @@ function injectButton() {
                 },
                 body: JSON.stringify({
                     emailContent: emailContent,
-                    tone: "professional"
+                    tone: selectedTone
                 })
             });
 
