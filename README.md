@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Email Writer Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend API to produce professional, casual, friendly, and formal replies based on the user's selection.
+The Email Writer Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend SpringBoot API to produce professional, casual, friendly, and formal replies based on the user's selection.
 
 ## Features
 
