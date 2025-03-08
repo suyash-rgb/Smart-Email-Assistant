@@ -90,6 +90,15 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
 - Generates AI-based email replies using a backend API.
 - Inserts the generated reply into the Gmail compose window.
 
+## Key Components of the Project
+
+### MutationObserver
+
+A MutationObserver is a built-in JavaScript object that allows you to watch for changes being made to the DOM tree. It provides a way to react to changes in the structure of a web page, such as when elements are added, removed, or modified. This is particularly useful for dynamically updating content or monitoring changes in real-time.
+
+For more detailed information and examples, you can refer to the official [MutationObserver Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
+
+
 ## Installation
 
 1. Clone the repository to your local machine:
