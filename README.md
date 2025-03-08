@@ -119,3 +119,14 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
 4. Click the "AI Reply" button to generate a response.
 
 5. The generated reply will be inserted into the compose window.
+
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+   ````git checkout -b feature-name
+3. Commit your changes and push the branch to your fork.
+   ````git commit -m "Description of changes"
+       git push origin feature-name
+4. Open a pull request and describe your changes.
+
