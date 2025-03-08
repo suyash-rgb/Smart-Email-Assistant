@@ -1,8 +1,8 @@
-# Email Writer Assistant - Chrome Extension
+# Smart Email Assistant - Chrome Extension
 
 ## Overview
 
-The Email Writer Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend SpringBoot API to produce professional, casual, friendly, and formal replies based on the user's selection.
+The Smart Email Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend SpringBoot API to produce professional, casual, friendly, and formal replies based on the user's selection.
 
 ![Alt text](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/ca16300aeedd2c4b9a442b28f4a97824fb6d9243/img/6622a10b71418bc54de60544_xg39csze28.webp)
 
