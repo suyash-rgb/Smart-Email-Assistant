@@ -81,6 +81,8 @@ Creating a Chrome extension involves several steps. Here’s a high-level overvi
 
 For more detailed information and documentation, please refer to the official [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/).
 
+For free sample code for Chrome extensions, check out this [GitHub repository](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world).
+
 ## Features
 
 - Extracts email content from the Gmail interface.
