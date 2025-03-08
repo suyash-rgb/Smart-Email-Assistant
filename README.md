@@ -1,8 +1,8 @@
-# Email Writer Assistant - Chrome Extension
+# Smart Email Assistant - Chrome Extension
 
 ## Overview
 
-The Email Writer Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend SpringBoot API to produce professional, casual, friendly, and formal replies based on the user's selection.
+The Smart Email Assistant is a Chrome extension that helps users generate AI-powered email replies directly within Gmail. This extension leverages a backend SpringBoot API to produce professional, casual, friendly, and formal replies based on the user's selection.
 
 ![Alt text](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/ca16300aeedd2c4b9a442b28f4a97824fb6d9243/img/6622a10b71418bc54de60544_xg39csze28.webp)
 
@@ -16,9 +16,19 @@ Gmail, launched by Google on April 1, 2004, revolutionized email with its user-f
 In case of a web application, one would basically be required to copy the contents of the email he has recieved and paste it into the web application created then generate the reply and copy that and paste it back to his email service. One can obviously do that but there's an easier way!
 You can integrate you web application into Gmail's UI by creating a Chrome extension and loading it.
 You can also publish this extension if you like.
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/9e0079707ef220575330afe3242c80ce87b22e09/img/Email.png)
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/b9cf287517bc9a068ecf39fcbe3c8d404c31262d/img/generated%20reply.png)
 
+<br><br>
 Whether you're replying to an email that you recieved recently or you're in a mail trail ( chain of replies ) the extension is smart enough to understand the context and generate an appropriate reply.
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/6d3e8c615a6e0cb9828e38904a582b05686bceca/img/mail%20trail.gif)
 
+<br>
+
+### What is an Extension?
+A Chrome extension is a small software program that enhances the functionality of the Google Chrome browser. Extensions allow users to customize their browsing experience by adding new features, modifying the appearance of web pages, or integrating with other services and applications. These extensions are built using web technologies such as HTML, CSS, and JavaScript, and can be easily installed from the Chrome Web Store. By leveraging the capabilities of Chrome extensions, users can streamline tasks, improve productivity, and personalize their interactions with the web.
+
+<br>
 
 ## Features
 
