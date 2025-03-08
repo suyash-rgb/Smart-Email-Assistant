@@ -164,7 +164,7 @@ For more detailed information and documentation, please refer to the official [M
 5. The generated reply will be inserted into the compose window.
 
 ## Contributing
-Contributions are welcome! Please follow these steps to contribute:
+Contributions are welcome! Please follow these steps to contribute: <br>
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
    ````
