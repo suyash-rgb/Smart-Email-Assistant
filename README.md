@@ -96,3 +96,8 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
    ```bash
    git clone <repository-url>
 
+2. Navigate to the extension directory:
+    ```bash
+    cd email-writer-ext
+
+
