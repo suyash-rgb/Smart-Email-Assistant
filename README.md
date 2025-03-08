@@ -95,6 +95,7 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
 ### Gemini API
 
 The Gemini API is a powerful tool that allows developers to access advanced generative models for various tasks, such as text generation, embeddings, and more. In this project, the Gemini API is used to generate AI-powered email replies based on the user's input and selected tone.
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/7ba923714c837f1e070def8821eab6efa05ea733/img/gemini%20api.jpg)
 
 #### How to Obtain a Gemini API Key
 
@@ -125,6 +126,11 @@ A MutationObserver is a built-in JavaScript object that allows you to watch for 
 
 For more detailed information and examples, you can refer to the official [MutationObserver Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
 
+### Material UI (MUI)
+
+Material UI (MUI) is an open-source React component library that implements Google's Material Design principles. It provides a comprehensive set of pre-built components and styling solutions that enable developers to create visually appealing and consistent user interfaces with ease. MUI is highly customizable and flexible, making it suitable for a wide range of web development projects. Despite following Google's Material Design guidelines, Material UI is maintained by a dedicated community of developers and the team at MUI, rather than by Google itself.
+
+For more detailed information and documentation, please refer to the official [Material UI Documentation](https://mui.com/?form=MG0AV3).
 
 ## Installation
 
