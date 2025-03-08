@@ -129,6 +129,7 @@ For more detailed information and examples, you can refer to the official [Mutat
 ### Material UI (MUI)
 
 Material UI (MUI) is an open-source React component library that implements Google's Material Design principles. It provides a comprehensive set of pre-built components and styling solutions that enable developers to create visually appealing and consistent user interfaces with ease. MUI is highly customizable and flexible, making it suitable for a wide range of web development projects. Despite following Google's Material Design guidelines, Material UI is maintained by a dedicated community of developers and the team at MUI, rather than by Google itself.
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/339e809de51ca24067d6e9033fab425278eb8679/img/materail%20ui.png)
 
 For more detailed information and documentation, please refer to the official [Material UI Documentation](https://mui.com/?form=MG0AV3).
 
@@ -163,8 +164,8 @@ For more detailed information and documentation, please refer to the official [M
 5. The generated reply will be inserted into the compose window.
 
 ## Contributing
-Contributions are welcome! Please follow these steps to contribute:
-1. Fork the repository.
+Contributions are welcome! Please follow these steps to contribute: <br>
+1. Fork the repository. <br>
 2. Create a new branch for your feature or bugfix.
    ````
    git checkout -b feature-name
