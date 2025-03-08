@@ -165,7 +165,7 @@ For more detailed information and documentation, please refer to the official [M
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute: <br>
-1. Fork the repository.
+1. Fork the repository. <br>
 2. Create a new branch for your feature or bugfix.
    ````
    git checkout -b feature-name
