@@ -131,6 +131,7 @@ For more detailed information and examples, you can refer to the official [Mutat
 
 ### Material UI (MUI)
 
+If you wish to develop a Web Application instead of the extension, I would like to suggest using Material UI. 
 Material UI (MUI) is an open-source React component library that implements Google's Material Design principles. It provides a comprehensive set of pre-built components and styling solutions that enable developers to create visually appealing and consistent user interfaces with ease. MUI is highly customizable and flexible, making it suitable for a wide range of web development projects. Despite following Google's Material Design guidelines, Material UI is maintained by a dedicated community of developers and the team at MUI, rather than by Google itself.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/339e809de51ca24067d6e9033fab425278eb8679/img/materail%20ui.png)
 
