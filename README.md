@@ -90,6 +90,42 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
 - Generates AI-based email replies using a backend API.
 - Inserts the generated reply into the Gmail compose window.
 
+## Key Components of the Project
+
+### Gemini API
+
+The Gemini API is a powerful tool that allows developers to access advanced generative models for various tasks, such as text generation, embeddings, and more. In this project, the Gemini API is used to generate AI-powered email replies based on the user's input and selected tone.
+
+#### How to Obtain a Gemini API Key
+
+To use the Gemini API, you need to obtain an API key. Follow these steps to get your API key:
+
+1. **Sign in to Google AI Studio**:
+   - Go to [Google AI Studio](https://ai.google.dev/gemini-api/docs/api-key) and sign in with your Google account.
+
+2. **Create a New Project**:
+   - If you don't already have a project, create a new one in Google AI Studio.
+
+3. **Generate an API Key**:
+   - Navigate to the API section and generate a new API key for your project.
+
+4. **Set Up Your API Key**:
+   - For initial testing, you can hard code the API key in your application. However, it is recommended to set up your API key as an environment variable for better security.
+
+5. **Secure Your API Key**:
+   - Keep your API key secure and do not expose it in your source code. Follow best practices for managing API keys to prevent unauthorized access.
+
+For more detailed information and documentation, please refer to the official [Gemini API Documentation](https://ai.google.dev/gemini-api/docs).
+
+
+### MutationObserver
+
+A MutationObserver is a built-in JavaScript object that allows you to watch for changes being made to the DOM tree. It provides a way to react to changes in the structure of a web page, such as when elements are added, removed, or modified. This is particularly useful for dynamically updating content or monitoring changes in real-time.
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8c15a53bcfba097fc058b31fad48719560f15d22/img/mutation%20observer.jpg)
+
+For more detailed information and examples, you can refer to the official [MutationObserver Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
+
+
 ## Installation
 
 1. Clone the repository to your local machine:
