@@ -94,17 +94,3 @@ For more detailed information and documentation, please refer to the official [C
    ```bash
    git clone <repository-url>
 
-
-## Features
-
-- Extracts email content from the Gmail interface.
-- Provides a dropdown to select the tone of the reply (Professional, Casual, Friendly, Formal).
-- Generates AI-based email replies using a backend API.
-- Inserts the generated reply into the Gmail compose window.
-
-## Installation
-
-1. Clone the repository to your local machine:
-   ```bash
-   git clone <repository-url>
-
