@@ -130,7 +130,7 @@ For more detailed information and examples, you can refer to the official [Mutat
 
 Material UI (MUI) is an open-source React component library that implements Google's Material Design principles. It provides a comprehensive set of pre-built components and styling solutions that enable developers to create visually appealing and consistent user interfaces with ease. MUI is highly customizable and flexible, making it suitable for a wide range of web development projects. Despite following Google's Material Design guidelines, Material UI is maintained by a dedicated community of developers and the team at MUI, rather than by Google itself.
 
-For more detailed information and documentation, please refer to the official Material UI Documentation.
+For more detailed information and documentation, please refer to the official [Material UI Documentation](https://mui.com/?form=MG0AV3).
 
 ## Installation
 
