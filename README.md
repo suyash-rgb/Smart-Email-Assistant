@@ -105,6 +105,10 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
  - Enable "Developer mode" by toggling the switch in the top right corner.
  - Click "Load unpacked" and select the extension directory.
 
+## Backend Setup
+1. Set up the backend server to handle email generation requests.
+2. Update the ````gemini.api.url```` and ````gemini.api.key```` values in the backedn configuration.
+
 ## Usage
 1. Open Gmail in your Chrome browser.
 
