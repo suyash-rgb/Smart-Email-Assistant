@@ -25,10 +25,63 @@ Whether you're replying to an email that you recieved recently or you're in a ma
 
 <br>
 
-### What is an Extension?
+### What is a Chrome Extension?
 A Chrome extension is a small software program that enhances the functionality of the Google Chrome browser. Extensions allow users to customize their browsing experience by adding new features, modifying the appearance of web pages, or integrating with other services and applications. These extensions are built using web technologies such as HTML, CSS, and JavaScript, and can be easily installed from the Chrome Web Store. By leveraging the capabilities of Chrome extensions, users can streamline tasks, improve productivity, and personalize their interactions with the web.
-
+![chrome extension](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d1c3e6045a77c6b09c3935bb7e172787e092975f/img/chrome%20extension.jpg)
 <br>
+
+### Steps to Create a Chrome Extension
+
+Creating a Chrome extension involves several steps. Here’s a high-level overview of the process:
+
+1. **Set Up Your Extension Directory**:
+   - Create a new directory for your extension files.
+   - Inside this directory, create a file named `manifest.json`.
+
+2. **Create the Manifest File**:
+   - The `manifest.json` file provides essential information about your extension, such as its name, version, permissions, and background scripts.
+   - Example content for `manifest.json`:
+     ```json
+     {
+         "manifest_version": 3,
+         "name": "My Extension",
+         "version": "1.0",
+         "description": "A brief description of your extension.",
+         "permissions": ["activeTab"],
+         "background": {
+             "service_worker": "background.js"
+         },
+         "content_scripts": [
+             {
+                 "matches": ["<all_urls>"],
+                 "js": ["content-script.js"]
+             }
+         ]
+     }
+     ```
+
+3. **Develop the Extension's Functionality**:
+   - Create HTML, CSS, and JavaScript files to implement the desired features of your extension.
+   - Example content for `content-script.js`:
+     ```javascript
+     console.log("Content script loaded!");
+     ```
+
+4. **Load Your Extension in Chrome**:
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode" by toggling the switch in the top right corner.
+   - Click "Load unpacked" and select the directory containing your extension files.
+
+5. **Test and Debug Your Extension**:
+   - Ensure that your extension works as expected by testing it in different scenarios.
+   - Use the Chrome Developer Tools to debug and refine your code.
+
+6. **Publish Your Extension (Optional)**:
+   - If you wish to share your extension with others, you can publish it to the Chrome Web Store.
+
+For more detailed information and documentation, please refer to the official [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/).
+
+For free sample code for Chrome extensions, check out this [GitHub repository](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world).
 
 ## Features
 
@@ -43,3 +96,43 @@ A Chrome extension is a small software program that enhances the functionality o
    ```bash
    git clone <repository-url>
 
+2. Navigate to the extension directory:
+    ```bash
+    cd email-writer-ext
+
+3. Load the extension in Chrome:
+ - Open Chrome and navigate to ````chrome://extensions/````.
+ - Enable "Developer mode" by toggling the switch in the top right corner.
+ - Click "Load unpacked" and select the extension directory.
+
+## Backend Setup
+1. Set up the backend server to handle email generation requests.
+2. Update the ````gemini.api.url```` and ````gemini.api.key```` values in the backedn configuration.
+
+## Usage
+1. Open Gmail in your Chrome browser.
+
+2. Compose a new email or reply to an existing one.
+
+3. Select the desired tone from the dropdown.
+
+4. Click the "AI Reply" button to generate a response.
+
+5. The generated reply will be inserted into the compose window.
+
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+   ````
+   git checkout -b feature-name
+   ````
+3. Commit your changes and push the branch to your fork.
+   ````
+   git commit -m "Description of changes"
+   git push origin feature-name
+   ````
+4. Open a pull request and describe your changes.
+
+## Contact
+For questions or support, please reach out to me at suyashbaoney58@gmail.com .
