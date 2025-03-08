@@ -25,9 +25,9 @@ Whether you're replying to an email that you recieved recently or you're in a ma
 
 <br>
 
-### What is an Extension?
+### What is a Chrome Extension?
 A Chrome extension is a small software program that enhances the functionality of the Google Chrome browser. Extensions allow users to customize their browsing experience by adding new features, modifying the appearance of web pages, or integrating with other services and applications. These extensions are built using web technologies such as HTML, CSS, and JavaScript, and can be easily installed from the Chrome Web Store. By leveraging the capabilities of Chrome extensions, users can streamline tasks, improve productivity, and personalize their interactions with the web.
-
+![chrome extension](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d1c3e6045a77c6b09c3935bb7e172787e092975f/img/chrome%20extension.jpg)
 <br>
 
 ## Features
