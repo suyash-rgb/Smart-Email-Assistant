@@ -127,6 +127,9 @@ For more detailed information and documentation, please refer to the official [G
 A MutationObserver is a built-in JavaScript object that allows you to watch for changes being made to the DOM tree. It provides a way to react to changes in the structure of a web page, such as when elements are added, removed, or modified. This is particularly useful for dynamically updating content or monitoring changes in real-time.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8c15a53bcfba097fc058b31fad48719560f15d22/img/mutation%20observer.jpg)
 
+#### How and Why MutationObserver is Used
+In this project, MutationObserver is used to detect when the Gmail compose window is opened. By observing changes to the DOM, we can dynamically inject the AI reply button and the tone selection dropdown whenever the compose window appears. This approach ensures that the extension's functionality is seamlessly integrated into the Gmail interface, providing a smooth user experience.
+
 For more detailed information and examples, you can refer to the official [MutationObserver Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
 
 ### Material UI (MUI)
