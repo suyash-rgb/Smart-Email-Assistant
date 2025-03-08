@@ -17,7 +17,7 @@ In case of a web application, one would basically be required to copy the conten
 You can integrate you web application into Gmail's UI by creating a Chrome extension and loading it.
 You can also publish this extension if you like.
 
-
+Whether you're replying to an email that you recieved recently or you're in a mail trail ( chain of replies ) the extension is smart enough to understand the context and generate an appropriate reply.
 
 
 ## Features
