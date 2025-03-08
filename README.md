@@ -16,7 +16,7 @@ Gmail, launched by Google on April 1, 2004, revolutionized email with its user-f
 In case of a web application, one would basically be required to copy the contents of the email he has recieved and paste it into the web application created then generate the reply and copy that and paste it back to his email service. One can obviously do that but there's an easier way!
 You can integrate you web application into Gmail's UI by creating a Chrome extension and loading it.
 You can also publish this extension if you like.
-![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d955a0d7b68d02ef6549f1511a14d67662da0ada/img/gmail-1.jpeg)
+![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/9e0079707ef220575330afe3242c80ce87b22e09/img/Email.png)
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d955a0d7b68d02ef6549f1511a14d67662da0ada/img/gmail-1.jpeg)
 
 Whether you're replying to an email that you recieved recently or you're in a mail trail ( chain of replies ) the extension is smart enough to understand the context and generate an appropriate reply.
