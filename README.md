@@ -101,7 +101,7 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
     cd email-writer-ext
 
 3. Load the extension in Chrome:
- - Open Chrome and navigate to chrome://extensions/.
+ - Open Chrome and navigate to ````chrome://extensions/````.
  - Enable "Developer mode" by toggling the switch in the top right corner.
  - Click "Load unpacked" and select the extension directory.
 
