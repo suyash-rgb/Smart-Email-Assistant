@@ -105,4 +105,13 @@ For free sample code for Chrome extensions, check out this [GitHub repository](h
  - Enable "Developer mode" by toggling the switch in the top right corner.
  - Click "Load unpacked" and select the extension directory.
 
+## Usage
+1. Open Gmail in your Chrome browser.
 
+2. Compose a new email or reply to an existing one.
+
+3. Select the desired tone from the dropdown.
+
+4. Click the "AI Reply" button to generate a response.
+
+5. The generated reply will be inserted into the compose window.
