@@ -23,6 +23,13 @@ You can also publish this extension if you like.
 Whether you're replying to an email that you recieved recently or you're in a mail trail ( chain of replies ) the extension is smart enough to understand the context and generate an appropriate reply.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/6d3e8c615a6e0cb9828e38904a582b05686bceca/img/mail%20trail.gif)
 
+<br>
+
+### What is an Extension?
+A Chrome extension is a small software program that enhances the functionality of the Google Chrome browser. Extensions allow users to customize their browsing experience by adding new features, modifying the appearance of web pages, or integrating with other services and applications. These extensions are built using web technologies such as HTML, CSS, and JavaScript, and can be easily installed from the Chrome Web Store. By leveraging the capabilities of Chrome extensions, users can streamline tasks, improve productivity, and personalize their interactions with the web.
+
+<br>
+
 ## Features
 
 - Extracts email content from the Gmail interface.
