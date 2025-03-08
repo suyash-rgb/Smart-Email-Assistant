@@ -70,9 +70,9 @@ Creating a Chrome extension involves several steps. Here’s a high-level overvi
 4. **Load Your Extension in Chrome**:
    - Open Chrome and navigate to `chrome://extensions/`.
    - Enable "Developer mode" by toggling the switch in the top right corner.
-     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d1c3e6045a77c6b09c3935bb7e172787e092975f/img/chrome%20extension.jpg)
+     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8809aa6d06ca306d168bc4f757c7c710d57c815c/img/developer%20mode.png)
    - Click "Load unpacked" and select the directory containing your extension files.
-     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/d1c3e6045a77c6b09c3935bb7e172787e092975f/img/chrome%20extension.jpg)
+     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8809aa6d06ca306d168bc4f757c7c710d57c815c/img/load%20unpacked.png)
 
 5. **Test and Debug Your Extension**:
    - Ensure that your extension works as expected by testing it in different scenarios.
