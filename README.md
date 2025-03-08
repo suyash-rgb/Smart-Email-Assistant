@@ -19,6 +19,7 @@ You can also publish this extension if you like.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/9e0079707ef220575330afe3242c80ce87b22e09/img/Email.png)
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/b9cf287517bc9a068ecf39fcbe3c8d404c31262d/img/generated%20reply.png)
 
+<br><br>
 Whether you're replying to an email that you recieved recently or you're in a mail trail ( chain of replies ) the extension is smart enough to understand the context and generate an appropriate reply.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/6d3e8c615a6e0cb9828e38904a582b05686bceca/img/mail%20trail.gif)
 
