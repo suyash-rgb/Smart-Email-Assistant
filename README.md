@@ -128,7 +128,9 @@ Contributions are welcome! Please follow these steps to contribute:
    git checkout -b feature-name
    ````
 3. Commit your changes and push the branch to your fork.
-   ````git commit -m "Description of changes"
-       git push origin feature-name
+   ````
+   git commit -m "Description of changes"
+   git push origin feature-name
+   ````
 4. Open a pull request and describe your changes.
 
