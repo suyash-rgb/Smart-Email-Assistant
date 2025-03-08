@@ -134,3 +134,5 @@ Contributions are welcome! Please follow these steps to contribute:
    ````
 4. Open a pull request and describe your changes.
 
+## Contact
+For questions or support, please reach out to me at suyashbaoney58@gmail.com .
