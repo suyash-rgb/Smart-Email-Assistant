@@ -70,7 +70,10 @@ Creating a Chrome extension involves several steps. Here’s a high-level overvi
 4. **Load Your Extension in Chrome**:
    - Open Chrome and navigate to `chrome://extensions/`.
    - Enable "Developer mode" by toggling the switch in the top right corner.
+     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8809aa6d06ca306d168bc4f757c7c710d57c815c/img/developer%20mode.png)
+     <br><br>
    - Click "Load unpacked" and select the directory containing your extension files.
+     ![dev mode](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8809aa6d06ca306d168bc4f757c7c710d57c815c/img/load%20unpacked.png)
 
 5. **Test and Debug Your Extension**:
    - Ensure that your extension works as expected by testing it in different scenarios.
@@ -124,10 +127,14 @@ For more detailed information and documentation, please refer to the official [G
 A MutationObserver is a built-in JavaScript object that allows you to watch for changes being made to the DOM tree. It provides a way to react to changes in the structure of a web page, such as when elements are added, removed, or modified. This is particularly useful for dynamically updating content or monitoring changes in real-time.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/8c15a53bcfba097fc058b31fad48719560f15d22/img/mutation%20observer.jpg)
 
+#### How and Why MutationObserver is Used
+In this project, MutationObserver is used to detect when the Gmail compose window is opened. By observing changes to the DOM, we can dynamically inject the AI reply button and the tone selection dropdown whenever the compose window appears. This approach ensures that the extension's functionality is seamlessly integrated into the Gmail interface, providing a smooth user experience.
+
 For more detailed information and examples, you can refer to the official [MutationObserver Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
 
 ### Material UI (MUI)
 
+If you wish to develop a Web Application instead of the extension, I would like to suggest using Material UI. 
 Material UI (MUI) is an open-source React component library that implements Google's Material Design principles. It provides a comprehensive set of pre-built components and styling solutions that enable developers to create visually appealing and consistent user interfaces with ease. MUI is highly customizable and flexible, making it suitable for a wide range of web development projects. Despite following Google's Material Design guidelines, Material UI is maintained by a dedicated community of developers and the team at MUI, rather than by Google itself.
 ![Gmail](https://github.com/suyash-rgb/Smart-Email-Assistant/blob/339e809de51ca24067d6e9033fab425278eb8679/img/materail%20ui.png)
 
@@ -162,6 +169,8 @@ For more detailed information and documentation, please refer to the official [M
 4. Click the "AI Reply" button to generate a response.
 
 5. The generated reply will be inserted into the compose window.
+<br>
+[Checkout the Project Demo Video on YouTube]()
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute: <br>
