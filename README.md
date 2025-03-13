@@ -169,6 +169,8 @@ For more detailed information and documentation, please refer to the official [M
 4. Click the "AI Reply" button to generate a response.
 
 5. The generated reply will be inserted into the compose window.
+<br>
+[Checkout the Project Demo Video on YouTube]()
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute: <br>
