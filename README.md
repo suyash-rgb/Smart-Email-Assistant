@@ -170,7 +170,7 @@ For more detailed information and documentation, please refer to the official [M
 
 5. The generated reply will be inserted into the compose window.
 <br>
-[Checkout the Project Demo Video on YouTube]()
+[Checkout the Project Demo Video on YouTube](https://www.youtube.com/watch?v=wTNfwma_LSM)
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute: <br>
