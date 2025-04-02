@@ -102,11 +102,9 @@ This section details the latest enhancements and modifications made to the Smart
 
 -   **Description:** The user interface within Gmail has been significantly enhanced to provide a more intuitive and efficient user experience.
 -   **Changes:**
-    -   **Sidebar Panel:** The extension now features a dedicated sidebar panel for AI reply generation, offering a persistent and integrated interface within Gmail. This replaces the previous popup-based approach.
+    -   **Sidebar Panel:** The extension now features a dedicated sidebar panel for AI reply generation, offering a persistent and integrated interface within Gmail. 
     -   **Visual Theme:** A new purple-themed design has been implemented for the sidebar, improving the visual appeal and consistency of the extension.
-    -   **Input Fields:** Users can now specify the desired reply length using a dedicated input field and provide custom instructions to the AI using a text area within the sidebar.
-    -   **Tone Dropdown Label:** A clear label has been added above the tone selection dropdown for improved clarity.
-    -   **Title Placement:** The "Email Writer Assistant" title within the sidebar has been repositioned for better layout and readability.
+    -   **Input Fields:** Users can now specify the desired reply length(in words), using a dedicated input field and provide custom instructions to the AI using a text area within the sidebar.
     -   **Close Button:** A close button has been added to the sidebar, allowing users to manually control its visibility.
     -   **CSS Refactoring:** Inline CSS styles have been consolidated into the `content.css` file, resulting in cleaner and more maintainable code.
 
