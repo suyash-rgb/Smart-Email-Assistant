@@ -95,7 +95,7 @@ This section details the latest enhancements and modifications made to the Smart
 -   **Description:** The extension now utilizes Google's Gemini 2.0 Flash model, replacing the previous Gemini 1.5 Flash version. This update improves the quality and efficiency of AI-generated email replies.
 -   **Backend Changes:**
     -   Updated the backend service to interact with the Gemini 2.0 Flash API.
-    -   Modified the DTO (Data Transfer Object) to include `maxLength` and `instructions` fields, allowing users to specify the desired reply length and provide custom instructions for the AI.
+    -   Modified the DTO (Data Transfer Object) to include `Length` and `instructions` fields, allowing users to specify the desired reply length and provide custom instructions for the AI.
     -   Adjusted the service layer logic to incorporate these new fields when generating replies.
 
 ### User Interface Enhancements
