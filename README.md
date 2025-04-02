@@ -86,6 +86,9 @@ For more detailed information and documentation, please refer to the official [C
 
 For free sample code for Chrome extensions, check out this [GitHub repository](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world).
 
+## Improvements
+
+
 ## Features
 
 - Extracts email content from the Gmail interface.
