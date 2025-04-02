@@ -86,8 +86,35 @@ For more detailed information and documentation, please refer to the official [C
 
 For free sample code for Chrome extensions, check out this [GitHub repository](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world).
 
-## Improvements
+## Recent Updates
 
+This section details the latest enhancements and modifications made to the Smart Email Assistant extension.
+
+### Gemini 2.0 Flash Integration
+
+-   **Description:** The extension now utilizes Google's Gemini 2.0 Flash model, replacing the previous Gemini 1.5 Flash version. This update improves the quality and efficiency of AI-generated email replies.
+-   **Backend Changes:**
+    -   Updated the backend service to interact with the Gemini 2.0 Flash API.
+    -   Modified the DTO (Data Transfer Object) to include `maxLength` and `instructions` fields, allowing users to specify the desired reply length and provide custom instructions for the AI.
+    -   Adjusted the service layer logic to incorporate these new fields when generating replies.
+
+### User Interface Enhancements
+
+-   **Description:** The user interface within Gmail has been significantly enhanced to provide a more intuitive and efficient user experience.
+-   **Changes:**
+    -   **Sidebar Panel:** The extension now features a dedicated sidebar panel for AI reply generation, offering a persistent and integrated interface within Gmail. This replaces the previous popup-based approach.
+    -   **Visual Theme:** A new purple-themed design has been implemented for the sidebar, improving the visual appeal and consistency of the extension.
+    -   **Input Fields:** Users can now specify the desired reply length using a dedicated input field and provide custom instructions to the AI using a text area within the sidebar.
+    -   **Tone Dropdown Label:** A clear label has been added above the tone selection dropdown for improved clarity.
+    -   **Title Placement:** The "Email Writer Assistant" title within the sidebar has been repositioned for better layout and readability.
+    -   **Close Button:** A close button has been added to the sidebar, allowing users to manually control its visibility.
+    -   **CSS Refactoring:** Inline CSS styles have been consolidated into the `content.css` file, resulting in cleaner and more maintainable code.
+
+### Functionality Improvements
+
+-   **Description:** The core functionality of the extension has been improved to ensure seamless integration with Gmail and provide more control to the user.
+-   **Changes:**
+    -   **Toolbar Button Compatibility:** The sidebar's AI reply button now triggers the click event of the original AI reply button injected into the Gmail compose toolbar. This ensures that any previously injected functionality remains operational.
 
 ## Features
 
