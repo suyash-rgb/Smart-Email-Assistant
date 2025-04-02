@@ -119,6 +119,8 @@ This section details the latest enhancements and modifications made to the Smart
 - Extracts email content from the Gmail interface.
 - Provides a dropdown to select the tone of the reply (Professional, Casual, Friendly, Formal).
 - Generates AI-based email replies using a backend API.
+- **Allows users to specify the desired reply length.**
+- **Integrates a user-friendly sidebar panel, enabling custom AI reply instructions.**
 - Inserts the generated reply into the Gmail compose window.
 
 ## Key Components of the Project
