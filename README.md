@@ -127,11 +127,11 @@ This section details the latest enhancements and modifications made to the Smart
 
 | Feature   | Smart Email Assistant  | Gemini Gem(External Tool)  | Emily AI(Browsing Assistant)
 | --------- | ---------------------  | -------------------------- | ---------------------------
-| Integration with Gmail |
-| AI Capabilities |
-| Customization |
-| Speed and Performance |
-| Free/Paid |
+| Integration with Gmail | Primarily toolbar button + sidebar injection; relies on DOM manipulation. | No direct Gmail integration; Requires opening a separate window, copy-pasting email content, and copy-pasting replies back into Gmail. | ---------------------  |
+| AI Capabilities | Relies on a separate backend server (http://localhost:8080); simple email context extraction and tone adjustment | Integrates directly with Gemini; potentially higher quality responses; greater contextual understanding and instruction following; potentially supports more advanced features like summarization, sentiment analysis, etc. | ---------------------  |
+| Customization | Tone selection, reply length, and custom instructions; basic; UI customization is also basic. | Potentially more granular customization; user profiles to set preferences for default tones and styles; more complex reply structure customization and may be personalized to individual writing patterns. | ---------------------  |
+| Speed and Performance | Dependent on the backend server's response time; potential for delays due to network requests. | Potentially faster response times due to direct access to Gemini's models; dependent on network speeds and Gemini's processing time. | ---------------------  |
+| Free/Paid | Depends on the costs for the backend server and its use. | Depends on pricing model from Gemini or if you make it into an application and choose to sell it. | ---------------------  |
 
 
 ## Key Components of the Project
