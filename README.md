@@ -123,6 +123,12 @@ This section details the latest enhancements and modifications made to the Smart
 - **Integrates a user-friendly sidebar panel, enabling custom AI reply instructions.**
 - Inserts the generated reply into the Gmail compose window.
 
+## Comparison with alternatives
+
+| Feature   | Smart Email Assistant  | Gemini Gem(External Tool)  | Emily AI(Browsing Assistant)
+| --------- | ---------------------  | -------------------------- | ---------------------------
+
+
 ## Key Components of the Project
 
 ### Gemini API
