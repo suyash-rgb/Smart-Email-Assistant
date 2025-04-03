@@ -68,10 +68,18 @@ public class EmailGeneratorService {
 
     private String buildPrompt(EmailRequest emailRequest){
         StringBuilder prompt = new StringBuilder();
-        prompt.append("Generate a professional email reply for the following email content. Please don't generate a subject line ");
+        prompt.append("Generate a professional email reply for the following email content. Please don't generate a subject line! ");
         if(emailRequest.getTone()!=null && !emailRequest.getTone().isEmpty()){
             prompt.append("Use a").append(emailRequest.getTone()).append(" tone. ");
         }
+        if(emailRequest.getLength()!=null && !emailRequest.getLength().isEmpty()){
+            prompt.append("Make the reply under").append(emailRequest.getLength()).append(" words. ");
+        }
+        if(emailRequest.getInstruction()!=null && !emailRequest.getInstruction().isEmpty()){
+            prompt.append("Instruction: ").append(emailRequest.getInstruction()).append(". ");
+        }
+
+
         prompt.append("\n Original email: \n").append(emailRequest.getEmailContent());
         return prompt.toString();
 

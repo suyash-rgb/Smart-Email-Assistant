@@ -1,0 +1,84 @@
+/* Styles for AI Reply button and dropdown in toolbar */
+.ai-reply-button {
+    margin-right: 8px;
+    padding: 0 10px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    background-color: #f1f3f4;
+    color: #3c4043;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-tone-dropdown {
+    margin-right: 8px;
+    padding: 0 10px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    background-color: #f1f3f4;
+    color: #3c4043;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Styles for the sidebar */
+.ai-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #a06cd5;
+    padding: 15px;
+    border: 1px solid #8849c7;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.ai-close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.ai-sidebar-title {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ai-tone-label {
+    display: block;
+    margin-top: 20px;
+}
+
+.ai-length-label {
+    display: block;
+    margin-top: 50px;
+}
+
+.ai-length-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.ai-instructions-label {
+    display: block;
+    margin-top: 10px;
+}
+
+.ai-instructions-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    box-sizing: border-box;
+}

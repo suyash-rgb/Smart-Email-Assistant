@@ -34,6 +34,7 @@ function findComposeToolbar() {
 
 function createAIDropdown() {
     const dropdown = document.createElement('select');
+
     dropdown.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3'; // Applying same class as button
     dropdown.style.marginRight = '8px';
     dropdown.style.padding = '0 10px';
@@ -58,7 +59,7 @@ function createAIDropdown() {
 
 function createAIButton() {
     const button = document.createElement('div');
-    button.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3';
+    button.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3'; // Applying same class as dropdown
     button.style.marginRight = '8px';
     button.innerHTML = 'AI Reply';
     button.setAttribute('role', 'button');
@@ -82,7 +83,7 @@ function injectButton() {
     toolbar.insertBefore(dropdown, toolbar.firstChild);
 
     const button = createAIButton();
-    button.classList.add('ai-reply-button');
+    button.classList.add('ai-reply-button'); //r
 
     button.addEventListener('click', async () => {
         try {
