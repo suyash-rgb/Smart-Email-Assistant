@@ -127,6 +127,11 @@ This section details the latest enhancements and modifications made to the Smart
 
 | Feature   | Smart Email Assistant  | Gemini Gem(External Tool)  | Emily AI(Browsing Assistant)
 | --------- | ---------------------  | -------------------------- | ---------------------------
+| Integration with Gmail |
+| AI Capabilities |
+| Customization |
+| Speed and Performance |
+| Free/Paid |
 
 
 ## Key Components of the Project
