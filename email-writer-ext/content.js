@@ -1,12 +1,8 @@
+// content.js
 console.log("Email Writer Extension - Content Script Loaded");
 
 function getEmailContent() {
-    const selectors = [
-        '.h7',
-        '.a3s.aiL',
-        'gmail_quote',
-        '[role="presentation"]'
-    ];
+    const selectors = ['.h7', '.a3s.aiL', 'gmail_quote', '[role="presentation"]'];
     for (const selector of selectors) {
         const content = document.querySelector(selector);
         if (content) {
@@ -17,12 +13,7 @@ function getEmailContent() {
 }
 
 function findComposeToolbar() {
-    const selectors = [
-        '.btC',
-        '.aDh',
-        '[role="toolbar"]',
-        '.gU.Up'
-    ];
+    const selectors = ['.btC', '.aDh', '[role="toolbar"]', '.gU.Up'];
     for (const selector of selectors) {
         const toolbar = document.querySelector(selector);
         if (toolbar) {
@@ -34,18 +25,7 @@ function findComposeToolbar() {
 
 function createAIDropdown() {
     const dropdown = document.createElement('select');
-
-    dropdown.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3'; // Applying same class as button
-    dropdown.style.marginRight = '8px';
-    dropdown.style.padding = '0 10px';
-    dropdown.style.height = '36px';
-    dropdown.style.borderRadius = '4px';
-    dropdown.style.border = '1px solid #d3d3d3';
-    dropdown.style.backgroundColor = '#f1f3f4';
-    dropdown.style.color = '#3c4043';
-    dropdown.style.fontSize = '14px';
-    dropdown.style.cursor = 'pointer';
-
+    dropdown.className = 'ai-tone-dropdown'; // Use CSS class
     const tones = ['Professional', 'Casual', 'Friendly', 'Formal'];
     tones.forEach(tone => {
         const option = document.createElement('option');
@@ -53,22 +33,19 @@ function createAIDropdown() {
         option.textContent = tone;
         dropdown.appendChild(option);
     });
-
     return dropdown;
 }
 
 function createAIButton() {
     const button = document.createElement('div');
-    button.className = 'T-J J-J5-Ji ao0 v7 T-I-atl L3'; // Applying same class as dropdown
-    button.style.marginRight = '8px';
+    button.className = 'ai-reply-button'; // Use CSS class
     button.innerHTML = 'AI Reply';
     button.setAttribute('role', 'button');
     button.setAttribute('data-tooltip', 'Generate AI Reply');
     return button;
 }
 
-function injectButton() {
-
+function injectButtonAndSetupSidebar() {
     const existingButton = document.querySelector('.ai-reply-button');
     if (existingButton) existingButton.remove();
 
@@ -83,7 +60,6 @@ function injectButton() {
     toolbar.insertBefore(dropdown, toolbar.firstChild);
 
     const button = createAIButton();
-    button.classList.add('ai-reply-button'); //r
 
     button.addEventListener('click', async () => {
         try {
@@ -127,10 +103,125 @@ function injectButton() {
     });
 
     toolbar.insertBefore(button, toolbar.firstChild);
+
+    // Trigger sidebar creation
+    createSidebar();
+}
+
+// Function to create sidebar (modified)
+function createSidebar() {
+    console.log("Attempting to create sidebar...");
+    if (document.getElementById('ai-sidebar')) {
+        console.log("Sidebar already exists");
+        return;
+    }
+
+    const sidebar = document.createElement('div');
+    sidebar.id = 'ai-sidebar';
+    sidebar.className = 'ai-sidebar'; // Use CSS class
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.className = 'ai-close-button'; // Use CSS class
+    closeButton.addEventListener('click', () => {
+        sidebar.remove();
+    });
+    sidebar.appendChild(closeButton);
+
+    const title = document.createElement('h3');
+    title.textContent = 'Email Writer Assistant';
+    title.className = 'ai-sidebar-title'; // Use CSS class
+    sidebar.appendChild(title);
+
+    const toneLabel = document.createElement('label');
+    toneLabel.textContent = 'Select Tone:';
+    toneLabel.className = 'ai-tone-label'; // Use CSS class
+    sidebar.appendChild(toneLabel);
+
+    const toneDropdown = createAIDropdown();
+    toneDropdown.style.marginTop = '5px'; // Keep this inline for now
+    sidebar.appendChild(toneDropdown);
+
+    const lengthInputLabel = document.createElement('label');
+    lengthInputLabel.textContent = 'Reply Length:';
+    lengthInputLabel.className = 'ai-length-label'; // Use CSS class
+    sidebar.appendChild(lengthInputLabel);
+
+    const lengthInput = document.createElement('input');
+    lengthInput.type = 'number';
+    lengthInput.value = '100';
+    lengthInput.className = 'ai-length-input'; // Use CSS class
+    sidebar.appendChild(lengthInput);
+
+    const instructionsLabel = document.createElement('label');
+    instructionsLabel.textContent = 'Reply Instructions:';
+    instructionsLabel.className = 'ai-instructions-label'; // Use CSS class
+    sidebar.appendChild(instructionsLabel);
+
+    const instructionsTextarea = document.createElement('textarea');
+    instructionsTextarea.className = 'ai-instructions-textarea'; // Use CSS class
+    sidebar.appendChild(instructionsTextarea);
+
+    const aiReplyButton = createAIButton();
+    aiReplyButton.style.marginTop = '10px'; // Keep this inline for now
+    aiReplyButton.addEventListener('click', async () => {
+        try {
+            aiReplyButton.innerHTML = 'Generating...';
+            aiReplyButton.disabled = true;
+
+            const emailContent = getEmailContent();
+            const selectedTone = toneDropdown.value;
+            const replyLength = lengthInput.value;
+            const replyInstructions = instructionsTextarea.value;
+
+            const response = await fetch('http://localhost:8080/api/email/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    emailContent: emailContent,
+                    tone: selectedTone,
+                    length: replyLength,
+                    instructions: replyInstructions
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('API Request Failed');
+            }
+            const generatedReply = await response.text();
+            const composeBox = document.querySelector('[role="textbox"][g_editable="true"]');
+
+            if (composeBox) {
+                composeBox.focus();
+                document.execCommand('insertText', false, generatedReply);
+            } else {
+                console.error('ComposeBox was not found');
+            }
+
+            // Trigger the toolbar button click
+            const toolbarButton = document.querySelector('.ai-reply-button');
+            if (toolbarButton) {
+                toolbarButton.click();
+            }
+
+        } catch (error) {
+            console.error(error);
+            alert('Failed to generate reply');
+        } finally {
+            aiReplyButton.innerHTML = 'AI Reply';
+            aiReplyButton.disabled = false;
+        }
+    });
+    sidebar.appendChild(aiReplyButton);
+
+    document.body.appendChild(sidebar);
+
+    console.log("Sidebar created successfully.");
 }
 
 const observer = new MutationObserver((mutations) => {
-
     for (const mutation of mutations) {
         const addedNodes = Array.from(mutation.addedNodes);
         const hasComposeElements = addedNodes.some(node =>
@@ -140,7 +231,7 @@ const observer = new MutationObserver((mutations) => {
 
         if (hasComposeElements) {
             console.log("Compose Window Detected");
-            setTimeout(injectButton, 500);
+            setTimeout(injectButtonAndSetupSidebar, 500);
         }
     }
 });
