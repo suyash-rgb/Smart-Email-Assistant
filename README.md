@@ -122,6 +122,7 @@ This section details the latest enhancements and modifications made to the Smart
 - **Allows users to specify the desired reply length.**
 - **Integrates a user-friendly sidebar panel, enabling custom AI reply instructions.**
 - Inserts the generated reply into the Gmail compose window.
+<br>
 
 ## Comparison with alternatives
 
